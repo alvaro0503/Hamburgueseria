@@ -33,10 +33,7 @@ img{
     display: block;
 }
 
-.container{
-    max-width: var(--anchoMaximo);/* para aplicar un diseño encorsetado a ciertas partes que nosotros queramos */
-    margin: 0 auto;
-}
+
 
 .row{
     display: flex;/* para aplicar display flex a los elementos que nosotros queramos aplicandoles la clase .row */
@@ -155,10 +152,14 @@ main section div article .fecha span {
 
 
 @media(min-width:62.750em){
+    .container{
+        max-width: var(--anchoMaximo);/* para aplicar un diseño encorsetado a ciertas partes que nosotros queramos */
+        margin: 0 auto;
+    }
+   
     main section div article{
         width: 33.333%;
-      
-    }
+      }
 }
 
 
