@@ -33,10 +33,7 @@ img{
     display: block;
 }
 
-.container{
-    max-width: var(--anchoMaximo);/* para aplicar un diseño encorsetado a ciertas partes que nosotros queramos */
-    margin: 0 auto;
-}
+
 
 .row{
     display: flex;/* para aplicar display flex a los elementos que nosotros queramos aplicandoles la clase .row */
@@ -173,9 +170,20 @@ main{
     background-color: var(--color-secundario);
 }
 
-main #menu{
-    background-color: var(--color-secundario);
-    margin: 10px 40px 70px 40px;
+main #menu aside nav{
+    margin: 20px 50px;
+}
+
+main #menu aside .oferta{
+    margin: 20px 50px;
+}
+
+main #menu .articulos{
+    margin: 40px 60px 65px 60px;
+}
+
+main #menu .articulos article div{
+    margin-bottom: 30px;
 }
 
 main section h2{
@@ -206,17 +214,26 @@ main section .underline hr{
     border-color: var(--color-principal);
 }
 
+
 main #menu h3{
     color: white;
     font-family: var(--fuentePrincipal);
     margin: 1em 0;
     font-weight: 700;
+    font-size: 0.9em;
 }
+
+main #menu aside .oferta hr{
+    margin: 0px 270px 20px 0px;
+    color: var(--color-principal);
+}
+
+
 
 main #menu aside nav ul li{
     font-family: var(--fuentePrincipal);
     color: white;
-    margin: 1em;
+    margin: 2px;
     width: 100%;
 }
 
@@ -224,13 +241,31 @@ main #menu aside nav ul li a{
     text-decoration: none;
     color: white;
     display: block;
-    padding: 15px 20px;
-    border-radius: 7%;
+    padding: 10px 20px;
+    border-radius: 3%;
 
 }
 
 main #menu aside nav ul li a:hover{
     background-color: var(--color-principal);
+}
+
+main #menu p{
+    color: white;
+}
+
+main #menu div article h3{
+    display: inline-block;
+    width: 85%;
+}
+
+main #menu div article small{
+    color: var(--color-principal);
+    display: inline-block;
+    font-weight: 700;
+    width: 10%;
+    text-align: center;
+    
 }
 
 
@@ -239,6 +274,39 @@ main #menu aside nav ul li a:hover{
     color: var(--color-principal);
     margin-top: 1em;
     display: block;
+    font-size: 0.9em;
+}
+
+@media(min-width:62.750em){
+    .container{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    main section aside{
+        display: inline-block;
+        width: 30%;
+    }
+    main #menu aside nav{
+        margin-bottom: 100px;
+    }
+
+    main #menu aside nav ul li{
+        margin: 10px 0px;
+    }
+
+    main section .articulos{
+        display: inline-block;
+        width: 50%;
+    }
+    main section .articulos article img{
+        display: inline-block;
+        width: 20%;
+    }
+    main section .articulos article div{
+        display: inline-block;
+        width: 50%;       
+    }
 }
 
 
