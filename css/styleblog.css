@@ -40,14 +40,104 @@ img{
 }
 
 
+
 /* inicio titulo */
 
-main #ourblogs{
-    padding-bottom: 100px;
+/* header */
+header .nav_top{
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
 }
 
-header div {
-    padding: 30px;
+header .nav_top a{
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+header .nav_top a span{
+    display: none;
+}
+
+header .nav_top a i{
+    color: var(--color-principal);
+}
+
+header .nav_top .row{
+    justify-content: space-between;/* sirve para separar los iconos equidistantemente */
+}
+
+header nav{
+    padding: 20px 10px;
+}
+
+header .hamburguesa{
+    width: 50px;
+    cursor: pointer;/* hace que salga la manita como si fuera un enlace */
+}
+
+header .hamburguesa div{
+    border-top: 2px solid var(--gris);
+    margin: 10px;
+}
+
+header nav .row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav ul{
+    width: 100%;
+}
+
+header nav .logo{
+    max-width: 110px;
+}
+
+header nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--gris);
+    border-bottom: 1px solid var(--gris);
+}
+
+header nav ul li a:hover{
+    color: var(--color-principal);
+}
+
+header nav ul li .activo{
+    color: var(--color-principal);
+}
+
+@media(min-width: 48em){
+    header .nav_top a span{
+        display: inline;
+    }
+}
+
+@media(min-width:62.750em){
+    header .hamburguesa{
+        display: none;
+    }
+
+    header nav ul{
+        width: auto;
+    }
+    header nav ul li{
+        display: inline-block;
+    }
+    header nav ul li a{
+        padding: 5px 20px;
+        border-bottom: 0px;
+    }
+}
+
+/* fin header */
+
+main #ourblogs{
+    margin: 100px 0px;
 }
 
 main section h2{
