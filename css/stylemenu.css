@@ -165,17 +165,17 @@ footer a:hover{
 
 /* inicio menu */
 
-
-.enlace{
-    text-decoration: none;
-    color: var(--color-principal);
-    margin-top: 1em;
-    display: block;
+body{
+    background-color: var(--color-secundario);
 }
 
+main{
+    background-color: var(--color-secundario);
+}
 
 main #menu{
     background-color: var(--color-secundario);
+    margin: 10px 40px 70px 40px;
 }
 
 main section h2{
@@ -206,7 +206,40 @@ main section .underline hr{
     border-color: var(--color-principal);
 }
 
+main #menu h3{
+    color: white;
+    font-family: var(--fuentePrincipal);
+    margin: 1em 0;
+    font-weight: 700;
+}
 
+main #menu aside nav ul li{
+    font-family: var(--fuentePrincipal);
+    color: white;
+    margin: 1em;
+    width: 100%;
+}
+
+main #menu aside nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 7%;
+
+}
+
+main #menu aside nav ul li a:hover{
+    background-color: var(--color-principal);
+}
+
+
+.enlace{
+    text-decoration: none;
+    color: var(--color-principal);
+    margin-top: 1em;
+    display: block;
+}
 
 
 /* fin menu */
