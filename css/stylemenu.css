@@ -162,3 +162,51 @@ footer a:hover{
     }
 }
 /*fin footer*/
+
+/* inicio menu */
+
+
+.enlace{
+    text-decoration: none;
+    color: var(--color-principal);
+    margin-top: 1em;
+    display: block;
+}
+
+
+main #menu{
+    background-color: var(--color-secundario);
+}
+
+main section h2{
+    color: white;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: var(--color-principal);
+}
+
+main section .underline{
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+main section .underline hr{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-principal);
+}
+
+
+
+
+/* fin menu */
