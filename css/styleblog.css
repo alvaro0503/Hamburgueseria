@@ -41,3 +41,82 @@ img{
 .row{
     display: flex;/* para aplicar display flex a los elementos que nosotros queramos aplicandoles la clase .row */
 }
+
+
+/* inicio titulo */
+
+main section h2{
+    color: black;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: var(--color-principal);
+}
+
+main section .underline{
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: 700;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+main section .underline hr{
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    border-color: var(--color-principal);
+}
+
+main #ourblogs .row{
+    flex-wrap: nowrap;
+}
+
+main #ourblogs article h3{
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+main #ourblogs h4{
+    margin: 1em 0;
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+.boton{
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1.15em;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid var(--color-principal);
+}
+
+.boton:hover{
+    background-color: transparent;
+    color: var(--color-principal);
+}
+
+.boton:hover i{
+    transform: translateX(5px);
+}
+
+.boton i{
+    transition: 0.5s;
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--color-principal);
+    margin-top: 1em;
+    display: block;
+}
+
+
+/* fin titulo */
