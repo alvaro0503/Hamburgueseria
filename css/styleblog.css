@@ -129,7 +129,38 @@ main #ourblogs h4{
 main section div article {
     width: 50%;
     padding: 10px;
+    position: relative;
+
 }
+
+
+main section div article .fecha {
+    position: absolute;
+    background-color:#fa573a80;
+    color: white;
+    font-family:var(--fuentePrincipal);
+    font-weight: 700;  
+    text-align: center;  
+    padding: 12px 15px;
+    top: 10px;
+    left: 10px;
+}
+
+main section div article .fecha span {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+
+}
+
+
+@media(min-width:62.750em){
+    main section div article{
+        width: 33.333%;
+      
+    }
+}
+
 
 
 /* fin titulo */
