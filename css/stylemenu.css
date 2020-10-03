@@ -305,8 +305,10 @@ main #menu div article small{
     }
     main section .articulos article div{
         display: inline-block;
-        width: 50%;       
+        width: 60%;   
+        margin-left: 15px;    
     }
+  
 }
 
 

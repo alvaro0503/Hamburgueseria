@@ -137,13 +137,13 @@ header nav ul li .activo{
 /* fin header */
 
 main #ourblogs{
-    margin: 100px 0px;
+    margin: 70px 0px;
 }
 
 main section h2{
     color: black;
     font-family: var(--fuenteSecundaria);
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
 }
 
