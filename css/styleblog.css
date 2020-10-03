@@ -45,6 +45,14 @@ img{
 
 /* inicio titulo */
 
+main #ourblogs{
+    padding-bottom: 100px;
+}
+
+header div {
+    padding: 30px;
+}
+
 main section h2{
     color: black;
     font-family: var(--fuenteSecundaria);
@@ -74,7 +82,7 @@ main section .underline hr{
 }
 
 main #ourblogs .row{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 main #ourblogs article h3{
@@ -118,5 +126,39 @@ main #ourblogs h4{
     display: block;
 }
 
+main section div article {
+    width: 50%;
+    padding: 10px;
+}
+
 
 /* fin titulo */
+
+/* inicia footer */
+
+footer{
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;/* al cambiar la posicion hay que volver a indicar el width */
+    margin-top: 20px;
+    bottom: 0px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+@media(min-width:48em){
+    footer{
+        text-align: left;
+    }
+}
+
+/* fin footer */
